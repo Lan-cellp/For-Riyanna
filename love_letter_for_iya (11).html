@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Iya, My Love</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe6f0;
+      font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      overflow: hidden;
+    }
+    .section {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .active {
+      display: flex;
+    }
+    button {
+      background: white;
+      border: 2px solid #ff69b4;
+      padding: 15px 30px;
+      font-size: 1rem;
+      margin: 10px;
+      border-radius: 25px;
+      cursor: pointer;
+      color: #ff69b4;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ff1493;
+      margin-bottom: 20px;
+      max-width: 90%;
+    }
+    .container {
+      background: #fff0f5;
+      color: #333;
+      max-height: 70vh;
+      overflow-y: auto;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: left;
+      width: 85%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Inter', sans-serif;
+    }
+    .container p {
+      line-height: 1.75;
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+    .music-controls {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .arrow-text {
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #d6336c;
+      font-size: 1rem;
+    }
+    .arrow {
+      font-size: 2rem;
+      animation: bounce 1s infinite;
+      color: #d6336c;
+    }
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <audio id="bgMusic" preload="auto">
+    <source src="https://media.vocaroo.com/mp3/1dJZG4too6Yh" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="page1" class="section active">
+    <h1>For Iya, My Love</h1>
+    <button onclick="nextSection('page2')">Continue</button>
+  </div>
+
+  <div id="page2" class="section">
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h1>Do you love me?</h1>
+      <button onclick="nextSection('page3')">Yes</button>
+      <button onclick="nextSection('page5')">No</button>
+    </div>
+  </div>
+
+  <div id="page3" class="section">
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h1>Do you wanna know how much I love you?</h1>
+      <button onclick="nextSection('page4')">Yes</button>
+    </div>
+  </div>
+
+  <div id="page4" class="section">
+    <div class="music-controls">
+      <div class="arrow-text">Play this before you read</div>
+      <div class="arrow">⬇</div>
+      <button onclick="playMusic()">Play Music</button>
+      <button onclick="pauseMusic()">Pause Music</button>
+    </div>
+    <div class="container">
+      <p>Iya, you're the best thing that ever happened to me. I was sad and alone before I met you. Life felt heavy. Every day felt like a blur and I didn’t even know what I was doing with myself. I kept pretending I was okay when deep down, I was so lost. Then you came into my life. Slowly, everything started to change. You gave my days meaning again. You brought light into the darkest corners of my heart. You made me feel something I didn’t even believe I deserved. Love. Real love. The kind that stays. The kind that heals.</p>
+      <p>You gave me something no one else could. You gave me peace. You gave me warmth. You gave me a reason to look forward to tomorrow. Before you, I didn’t know how good it felt to be truly seen. People looked at me but no one ever really saw me. You did. You made me feel like I mattered. Like I was worth loving even with all my flaws. You listened even when I had no idea how to express what I was feeling. You stayed when I was falling apart. You held me together with nothing but your love and patience.</p>
+      <p>You are my home. You are my calm in the storm. You are my loudest laugh, my softest comfort, my favorite hello, and the hardest goodbye. I don’t think I’ll ever be able to put into words how much you mean to me. But I will try every single day to show you. I want to love you in a way that makes you feel safe. I want to be the person you can always count on. The person who never gives up on you. The person who reminds you how incredible you are every single day.</p>
+      <p>You are so beautiful Iya. Inside and out. I admire everything about you. The way you care. The way you love. The way you fight for what matters to you. You inspire me. You make me want to be better. For myself. For you. For us. I dream of a future with you. A life where we get to do all the things we talked about. The road trips. The lazy Sundays. The random dance sessions in the kitchen. Waking up next to each other. Supporting each other through everything life throws at us.</p>
+      <p>I want to grow old with you. I want to be the one holding your hand when life gets tough. I want to be there during the wins and the losses. I want to be your partner in every sense of the word. I want to keep choosing you. Over and over again. Even on the days when everything feels difficult. Especially on those days.</p>
+      <p>I love you Iya. More than I can ever explain. You saved me in ways you may never fully understand. But I hope you feel it. In the way I look at you. In the way I speak to you. In the way I show up for you. You are the love of my life. My favorite person. The one I will always fight for. No matter what. No matter when. No matter how hard life gets. I am yours. Always.</p>
+    </div>
+  </div>
+
+  <div id="page5" class="section">
+    <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+      <h1>Are you sure? 🥺☹️</h1>
+      <button onclick="nextSection('page4')">Yes</button>
+      <button id="noButton" onclick="turnToYes()">No</button>
+    </div>
+  </div>
+
+  <script>
+    function nextSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function turnToYes() {
+      const btn = document.getElementById('noButton');
+      btn.innerText = 'Yes';
+      btn.onclick = () => nextSection('page4');
+    }
+
+    function playMusic() {
+      const music = document.getElementById('bgMusic');
+      music.volume = 0.5;
+      music.currentTime = 119;
+      music.play().catch(e => console.log('Autoplay error:', e));
+    }
+
+    function pauseMusic() {
+      document.getElementById('bgMusic').pause();
+    }
+  </script>
+</body>
+</html>
